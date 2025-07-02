@@ -23,7 +23,6 @@ class Programmer() : Employee() {
     }
 }
 
-
 class Designer : Employee() {
 
     override fun haveLunch() {
@@ -39,4 +38,12 @@ class Teamlead : Employee() {
     }
 }
 
-// TODO здесь можно создать новый класс, который будет наследоваться от класса Employee. Не забудьте переопределить методы haveLunch() и goHome()
+class SuperRabotnik() : Employee() {
+
+    override fun haveLunch() {
+        println("Обед на часик с пончиком и вкусным горячим шоколадом")
+    }
+    override fun goHome() {
+        println("Иду домой в 17:00")
+    }
+}
